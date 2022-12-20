@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.add_externet = exports.externets = exports.internets = exports.testnets = exports.mainnets = void 0;
+var chains_1 = require("../core/chains");
+Object.defineProperty(exports, "mainnets", { enumerable: true, get: function () { return chains_1.mainnets; } });
+Object.defineProperty(exports, "testnets", { enumerable: true, get: function () { return chains_1.testnets; } });
+Object.defineProperty(exports, "internets", { enumerable: true, get: function () { return chains_1.internets; } });
+const chains_2 = require("../core/chains");
+exports.externets = chains_2.externets;
+exports.add_externet = chains_2.add_externet;

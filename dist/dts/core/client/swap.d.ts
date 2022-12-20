@@ -1,0 +1,24 @@
+import * as sup from "../sup";
+import { hex_string } from "../hex_string";
+import { AxelCoreClient } from "../client";
+import { token } from "../tokens";
+import { address } from "../address";
+import { chain, internet } from "../chains";
+import { swapping_protocol } from "../protocols";
+import { gas_priority } from "../gas_priority";
+import { max_slippage_percent } from "../max_slippage_percent";
+type full_swap_request = {
+    sell_amount: sup.ufloat;
+    sell_token: token;
+    buy_token: token;
+    protocol: swapping_protocol;
+    client_chain: chain;
+    chain: internet;
+    wallet_address: address;
+    max_slippage_percent: max_slippage_percent;
+    gas_priority: gas_priority;
+    minutes_timeout: sup.uint;
+};
+export declare function swap(this: AxelCoreClient, opts: full_swap_request): Promise<hex_string[]>;
+export declare function safe_swap(this: AxelCoreClient, opts: unknown): Promise<hex_string[]>;
+export {};

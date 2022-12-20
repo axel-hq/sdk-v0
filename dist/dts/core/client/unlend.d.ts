@@ -1,0 +1,10 @@
+import { hex_string } from "../hex_string";
+import { AxelCoreClient } from "../client";
+import { protocols_of } from "../protocols";
+import { two1_req_full } from "./two1";
+declare const action_class: "lending";
+type action_class = typeof action_class;
+type pcols = protocols_of<typeof action_class>;
+export declare function unlend(this: AxelCoreClient, opts: two1_req_full<pcols>): Promise<hex_string[]>;
+export declare function safe_unlend(this: AxelCoreClient, opts: unknown): Promise<hex_string[]>;
+export {};

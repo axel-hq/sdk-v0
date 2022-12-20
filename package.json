@@ -1,0 +1,36 @@
+{
+   "name": "@axel-hq/sdk",
+   "version": "0.1.4",
+   "description": "A JavaScript & TypeScript sdk to interact with Axel's REST API.",
+   "homepage": "https://github.com/axel-hq/sdk-v0",
+   "repository": "git@github.com:axel-hq/foundatsion.git",
+   "bugs": {
+      "url": "https://github.com/axel-hq/sdk-v0/issues",
+      "email": "marcus@axel.dev"
+   },
+   "license": "ISC",
+   "contributors": [
+      {
+         "name": "Cole Gannon",
+         "email": "cole@axel.dev"
+      },
+      {
+         "name": "Marcus Luebke",
+         "email": "marcus@axel.dev"
+      },
+      {
+         "name": "Neetish Sharma",
+         "email": "neetish@axel.dev"
+      }
+   ],
+   "exports": {
+      "import": "./dist/es6/mod.js",
+      "require": "./dist/cjs/mod.js"
+   },
+   "types": "./dist/dts/mod.d.ts",
+   "dependencies": {
+      "@axel-hq/foundatsion": "^0.5.9",
+      "cross-fetch": "^3.1.5",
+      "ethers": "^5.7.2"
+   }
+}

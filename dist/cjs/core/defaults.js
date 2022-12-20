@@ -1,0 +1,10 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.default_max_slippage_percent = exports.default_gas_priority = exports.default_minutes_timeout = exports.default_poll_rate = void 0;
+const gas_priority_1 = require("./gas_priority");
+const max_slippage_percent_1 = require("./max_slippage_percent");
+const sup_1 = require("./sup");
+exports.default_poll_rate = (0, sup_1.uint_from)(100);
+exports.default_minutes_timeout = (0, sup_1.uint_from)(30);
+exports.default_gas_priority = gas_priority_1.gas_priorities.medium;
+exports.default_max_slippage_percent = (0, max_slippage_percent_1.max_slippage_percent_from)(1);
